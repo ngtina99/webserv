@@ -38,6 +38,7 @@ Non-technical: One short paragraph on why the project matters, why you’re prou
 ```bash
 git clone https://github.com/yourusername/webserv.git
 cd webserv
+
 2️⃣ Build the server
 
 bash
@@ -78,21 +79,29 @@ CGI handlers and paths
 Autoindex (directory listing)
 
 Example configs are provided in the config/ directory.
-🧪 Testing & Performance
-✅ Tested with web browsers: Chrome, Firefox, Safari
-✅ Stress-tested with 500+ concurrent users using ab and wrk
-✅ Memory-leak free under Valgrind
-✅ Correct handling of invalid requests, large payloads, and slow clients
 
-🤝 Credits
-I would like to express my gratitude to my peer pedperei for his collaboration and invaluable contributions throughout this project.
+## ✅ Summary of Testing Performed
 
-📜 License
+- Tested with **telnet**, **curl**, and prepared files
+- Verified **GET**, **POST**, **DELETE** requests
+- Checked handling of **unknown HTTP methods**
+- Confirmed correct **HTTP status codes** are returned
+- Tested **file upload** and retrieval
+- Checked **CGI scripts** with GET and POST methods
+- Verified **CGI error handling** (e.g., infinite loops, script errors)
+- Tested using **web browser** (static site, wrong URLs, directory listing, redirects)
+- Tested configuration with **multiple ports** and **hostnames**
+- Checked running **multiple servers** with overlapping ports
+- Ran **stress tests** using Siege (`siege -b`)
+- Confirmed **no memory leaks** under load
+- Verified **no hanging or stuck connections**
+
+## 🤝 Credits
+I had the pleasure of working with [**Yulia**](https://github.com/leanor13) and [**Lucas**](https://github.com/andlukass) on our Webserv project. I'm really proud of how we combined our skills, supported each other, and turned our teamwork into a project we’re all proud of. 🌟
+
+## 💼 Connect
+If you have any questions or suggestions, feel free to connect:
+🔗 [LinkedIn: Valentina Nguyen](https://www.linkedin.com/in/valentina-nguyen-tina/)
+
+##📜 License
 This project is licensed under the MIT License. See LICENSE for details.
-
-💬 Contact
-If you’re interested in my work or have any questions, feel free to connect:
-
-GitHub: yourusername
-
-LinkedIn: yourname
