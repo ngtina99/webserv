@@ -4,15 +4,16 @@
 
 This project was developed to provide a deep understanding of HTTP protocols, socket programming, I/O multiplexing, and server management.
 
-[![Watch the demo](assets/video-thumbnail.png)](https://1drv.ms/v/c/cbba1ebb1a165cd3/EepgbuCuB4tCilq-AplQCcwBHTFArXg8InyfVrQgMSP9BQ)
 
 
 💻 8. Write for both technical and non-technical readers
 Technical: Explain design decisions, patterns, challenges.
 
 Non-technical: One short paragraph on why the project matters, why you’re prou
----
 
+## 📽 Demo
+
+![Webserv demo](assets/webserv-demo.gif)
 ## 🚀 Features
 
 - I/O multiplexing using `poll()`
