@@ -92,6 +92,3 @@ If you’re interested in my work or have any questions, feel free to connect:
 GitHub: yourusername
 
 LinkedIn: yourname
-
-![License](https://img.shields.io/badge/license-MIT-green)
-![Language](https://img.shields.io/badge/language-C++98-blue)
