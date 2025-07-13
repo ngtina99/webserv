@@ -1,17 +1,13 @@
 # Webserv
 
-**Webserv** is a C++98 project that implements an HTTP/1.1 web server inspired by NGINX.
+Webserv is a C++98 project aimed at creating an HTTP/1.1 web server, inspired by NGINX, to explore the inner workings of web servers.
 
-This project was developed to provide a deep understanding of HTTP protocols, socket programming, I/O multiplexing, and server management.
-
-
-
-💻 8. Write for both technical and non-technical readers
-Technical: Explain design decisions, patterns, challenges.
-
-Non-technical: One short paragraph on why the project matters, why you’re prou
+I had the pleasure of working with [**Yulia**](https://github.com/leanor13) and [**Lucas**](https://github.com/andlukass) on our Webserv project, where we built an HTTP server with features like request handling, non-blocking I/O, and support for GET, POST, and DELETE. I focused mainly on request handling, static site setup, and host/port management.
+This was a big and exciting project. I’m really proud of how we worked as a team, shared ideas, and brought all the pieces together, and I’m truly happy with what we achieved to make this project as great as it turned out. 🎉
 
 ## 📽 Demo
+
+Here’s a short demo of our Webserv project in action - serving static pages, handling HTTP requests, and demonstrating the key features we implemented.
 
 ![Webserv demo](webserv_gif.gif)
 
@@ -59,7 +55,7 @@ The configuration files (`.conf`) allow you to customize:
 
 Example configs are provided in the `config/` directory.
 
-## 🌟 Features
+## ✨ Features
 
 - 📄 Serve static websites (HTML, CSS)
 - ⚙️ Support multiple servers with custom ports and hostnames
@@ -68,7 +64,7 @@ Example configs are provided in the `config/` directory.
   - Custom root directories and default files
   - Directory listing (autoindex)
   - HTTP redirection
-- 🛡️ Custom error pages for proper HTTP status handling
+- 🛑 Custom error pages for proper HTTP status handling
 - 📦 File upload support via POST
 - 🖥️ Execute CGI scripts (e.g., Python, BASH)
 - 🔧 Configuration file system inspired by NGINX:
