@@ -106,5 +106,5 @@ I had the pleasure of working with [**Yulia**](https://github.com/leanor13) and 
 If you have any questions or suggestions, feel free to connect:
 🔗 [LinkedIn: Valentina Nguyen](https://www.linkedin.com/in/valentina-nguyen-tina/)
 
-##📜 License
+## 📜 License
 This project is licensed under the MIT License. See LICENSE for details.
