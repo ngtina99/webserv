@@ -2,8 +2,12 @@
 
 **Webserv** is a C++98 project that implements an HTTP/1.1 web server inspired by NGINX.
 
-This project was developed as part of the 42 curriculum to provide a deep understanding of HTTP protocols, socket programming, I/O multiplexing, and server management.
+This project was developed to provide a deep understanding of HTTP protocols, socket programming, I/O multiplexing, and server management.
 
+💻 8. Write for both technical and non-technical readers
+Technical: Explain design decisions, patterns, challenges.
+
+Non-technical: One short paragraph on why the project matters, why you’re prou
 ---
 
 ## 🚀 Features
@@ -70,17 +74,25 @@ CGI handlers and paths
 Autoindex (directory listing)
 
 Example configs are provided in the config/ directory.
-
-🧪 Testing
-Webserv has been tested with:
-
-✅ 500+ concurrent users (using tools like ab or wrk)
-✅ Real browsers (Chrome, Firefox, Safari)
-✅ Stress conditions (large file uploads, long requests)
-✅ Memory checkers (valgrind) — no leaks or invalid reads/writes
+🧪 Testing & Performance
+✅ Tested with web browsers: Chrome, Firefox, Safari
+✅ Stress-tested with 500+ concurrent users using ab and wrk
+✅ Memory-leak free under Valgrind
+✅ Correct handling of invalid requests, large payloads, and slow clients
 
 🤝 Credits
 I would like to express my gratitude to my peer pedperei for his collaboration and invaluable contributions throughout this project.
 
 📜 License
 This project is licensed under the MIT License. See LICENSE for details.
+
+💬 Contact
+If you’re interested in my work or have any questions, feel free to connect:
+
+GitHub: yourusername
+
+LinkedIn: yourname
+
+yaml
+Copy
+Edit
