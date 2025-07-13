@@ -14,22 +14,6 @@ Non-technical: One short paragraph on why the project matters, why you’re prou
 ## 📽 Demo
 
 ![Webserv demo](webserv_gif.gif)
-## 🚀 Features
-
-- I/O multiplexing using `poll()`
-- Non-blocking file descriptors for efficient read/write
-- Support for HTTP methods: `GET`, `POST`, `DELETE`
-- Multipart request handling (e.g., file uploads)
-- Static file serving (HTML, CSS, JS, images, etc.)
-- Directory listing (autoindex) when enabled
-- CGI script execution (e.g., PHP, Python)
-- Configurable client body size limit
-- Customizable error pages and redirections
-- Support for multiple virtual servers and ports
-- Stress-tested to handle **500+ concurrent clients**
-- Clean memory management (no leaks on exit or error)
-
----
 
 ## 🛠️ Usage
 
@@ -58,27 +42,46 @@ In a browser: http://localhost:8080
 
 With curl from the terminal:
 ```bash
-curl -v http://localhost:<port>
+curl -v http://localhost:8080
 ```
 
-📝 Configuration
-The configuration files (.conf) allow you to customize:
+## 📝 Configuration
 
-Server names and ports
+The configuration files (`.conf`) allow you to customize:
 
-Locations and root directories
+- **Server names and ports**
+- **Locations and root directories**
+- **Allowed HTTP methods**
+- **Client body size limits**
+- **Error pages and redirections**
+- **CGI handlers and paths**
+- **Autoindex** (directory listing)
 
-Allowed HTTP methods
+Example configs are provided in the `config/` directory.
 
-Client body size limits
+### 🌟 Features
 
-Error pages and redirections
+- 📄 Serve static websites (HTML, CSS)
+- ⚙️ Support multiple servers with custom ports and hostnames
+- 🔀 Manage routes with:
+  - Accepted HTTP methods (GET, POST, DELETE)
+  - Custom root directories and default files
+  - Directory listing (autoindex)
+  - HTTP redirection
+- 🛡️ Custom error pages for proper HTTP status handling
+- 📦 File upload support via POST
+- 🖥️ Execute CGI scripts (e.g., Python, BASH)
+- 🔧 Configuration file system inspired by NGINX:
+  - Define server blocks
+  - Configure error pages, client body size limits and CGI handlers
+- 🌍 Non-blocking I/O using a single `select()` for all client-server operations
+- 🍪 Cookie and session management
 
-CGI handlers and paths
+### 📋 Additional Highlights
 
-Autoindex (directory listing)
-
-Example configs are provided in the config/ directory.
+- Makefile with standard rules (`all`, `clean`, `fclean`, `re`)
+- Fully compliant with C++98 (`-Wall -Wextra -Werror -std=c++98`)
+- No external libraries used
 
 ## ✅ Summary of Testing Performed
 
