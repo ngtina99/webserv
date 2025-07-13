@@ -3,7 +3,7 @@
 Webserv is a C++98 project aimed at creating an HTTP/1.1 web server, inspired by NGINX, to explore the inner workings of web servers.
 
 I had the pleasure of working with [**Yulia**](https://github.com/leanor13) and [**Lucas**](https://github.com/andlukass). I focused mainly on request handling, static site setup, and host/port management.
-This was a big and exciting project. I’m really proud of how we worked as a team, shared ideas, and brought all the pieces together, and I’m truly happy with what we achieved to make this project as great as it turned out. 🎉
+This was a big and exciting project. I’m really proud of how we worked as a team, shared ideas, and brought all the pieces together. 🎉
 
 ## 📽 Demo
 
