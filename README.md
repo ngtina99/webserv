@@ -105,5 +105,5 @@ If you have any questions or suggestions, feel free to connect:
 ## 📜 License
 This project is licensed under the MIT License. See LICENSE for details.
 
-### 🖥️ System Compatibility
-This project was developed and tested on Linux (Ubuntu)
+## 🖥️ System Compatibility
+This project was developed and tested on Linux (Ubuntu).
