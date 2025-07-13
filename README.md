@@ -70,7 +70,7 @@ Example configs are provided in the `config/` directory.
 - 🔧 Configuration file system inspired by NGINX:
   - Define server blocks
   - Configure error pages, client body size limits and CGI handlers
-- 🌍 Non-blocking I/O using a single `select()` for all client-server operations
+- ↔️ Non-blocking I/O using a single `select()` for all client-server operations
 - 🍪 Cookie and session management
 
 ## 📋 Additional Highlights
@@ -105,5 +105,5 @@ If you have any questions or suggestions, feel free to connect:
 ## 📜 License
 This project is licensed under the MIT License. See LICENSE for details.
 
-# 🖥️ System Compatibility
+### 🖥️ System Compatibility
 This project was developed and tested on Linux (Ubuntu)
