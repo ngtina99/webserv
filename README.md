@@ -93,6 +93,5 @@ GitHub: yourusername
 
 LinkedIn: yourname
 
-yaml
-Copy
-Edit
+![License](https://img.shields.io/badge/license-MIT-green)
+![Language](https://img.shields.io/badge/language-C++98-blue)
