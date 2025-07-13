@@ -13,7 +13,7 @@ Non-technical: One short paragraph on why the project matters, why you’re prou
 
 ## 📽 Demo
 
-![Webserv demo](assets/webserv-demo.gif)
+![Webserv demo](webserv_gif.gif)
 ## 🚀 Features
 
 - I/O multiplexing using `poll()`
