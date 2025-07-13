@@ -59,7 +59,7 @@ The configuration files (`.conf`) allow you to customize:
 
 Example configs are provided in the `config/` directory.
 
-### 🌟 Features
+## 🌟 Features
 
 - 📄 Serve static websites (HTML, CSS)
 - ⚙️ Support multiple servers with custom ports and hostnames
@@ -77,7 +77,7 @@ Example configs are provided in the `config/` directory.
 - 🌍 Non-blocking I/O using a single `select()` for all client-server operations
 - 🍪 Cookie and session management
 
-### 📋 Additional Highlights
+## 📋 Additional Highlights
 
 - Makefile with standard rules (`all`, `clean`, `fclean`, `re`)
 - Fully compliant with C++98 (`-Wall -Wextra -Werror -std=c++98`)
