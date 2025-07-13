@@ -36,31 +36,31 @@ Non-technical: One short paragraph on why the project matters, why you’re prou
 1️⃣ **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/webserv.git
+git clone https://github.com/yourusername/webserv.git webserv
 cd webserv
+```
 
 2️⃣ Build the server
 
-bash
-Copy
-Edit
+```bash
 make
+```
+
 3️⃣ Run the server
 
-bash
-Copy
-Edit
+```bash
 ./webserv config/regular.conf
+```
+
 4️⃣ Access the server
 
-In a browser: http://localhost:<port>
+In a browser: http://localhost:8080
 
-With curl:
-
-bash
-Copy
-Edit
+With curl from the terminal:
+```bash
 curl -v http://localhost:<port>
+```
+
 📝 Configuration
 The configuration files (.conf) allow you to customize:
 
