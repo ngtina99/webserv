@@ -16,7 +16,7 @@ Here’s a short demo of our Webserv project in action - serving static pages, h
 1️⃣ **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/webserv.git webserv
+git clone https://github.com/ngtina99/webserv.git webserv
 cd webserv
 ```
 
