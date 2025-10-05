@@ -80,7 +80,7 @@ Example configs are provided in the `config/` directory.
 
 ## ✅ Summary of Testing Performed
 
-- Tested with **telnet**, **curl**, and prepared files
+- Tested with  **curl**, and prepared files
 - Verified **GET**, **POST**, **DELETE** requests
 - Checked handling of **unknown HTTP methods**
 - Confirmed correct **HTTP status codes** are returned
