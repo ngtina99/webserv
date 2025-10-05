@@ -76,7 +76,6 @@ Example configs are provided in the `config/` directory.
 ## 📋 Additional Highlights
 
 - Makefile with standard rules (`all`, `clean`, `fclean`, `re`)
-- Fully compliant with C++98 (`-Wall -Wextra -Werror -std=c++98`)
 - No external libraries used
 
 ## ✅ Summary of Testing Performed
