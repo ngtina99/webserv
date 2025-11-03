@@ -41,6 +41,19 @@ With curl from the terminal:
 curl -v http://localhost:8080
 ```
 
+## Server Flow
+```bash
+1. Server starts → reads config file (ports, routes, CGI, etc.)
+2. Creates socket(s) → binds → listens on one or more ports
+3. Uses non-blocking I/O (select/poll) to handle many clients
+4. Parses HTTP request → method, headers, body
+5. Decides response:
+      - static file (HTML, PNG, etc.)
+      - CGI program (Python/PHP script)
+      - error page
+6. Sends response back
+```
+
 ## 📝 Configuration
 
 The configuration files (`.conf`) allow you to customize:
@@ -73,11 +86,6 @@ Example configs are provided in the `config/` directory.
 - ↔️ Non-blocking I/O using a single `select()` for all client-server operations
 - 🍪 Cookie and session management
 
-## 📋 Additional Highlights
-
-- Makefile with standard rules (`all`, `clean`, `fclean`, `re`)
-- No external libraries used
-
 ## ✅ Summary of Testing Performed
 
 - Tested with  **curl**, and prepared files
@@ -93,6 +101,11 @@ Example configs are provided in the `config/` directory.
 - Ran **stress tests** using Siege (`siege -b`, `siege -b -c 10 http://localhost:8080/`, `siege -c 50 -t 10s http://localhost:8080/`)
 - Confirmed **no memory leaks** under load
 - Verified **no hanging or stuck connections**
+
+## 📋 Additional Highlights
+
+- Makefile with standard rules (`all`, `clean`, `fclean`, `re`)
+- No external libraries used
 
 ## 🤝 Credits
 I had the pleasure of working with [**Yulia**](https://github.com/leanor13) and [**Lucas**](https://github.com/andlukass) on our Webserv project. I'm really proud of how we combined our skills, supported each other, and turned our teamwork into a project we’re all proud of. 🌟
