@@ -88,19 +88,19 @@ Example configs are provided in the `config/` directory.
 
 ## ✅ Summary of Testing Performed
 
-- Tested with  **curl**, and prepared files
-- Verified **GET**, **POST**, **DELETE** requests
-- Checked handling of **unknown HTTP methods**
-- Confirmed correct **HTTP status codes** are returned
-- Tested **file upload** and retrieval
-- Checked **CGI scripts** with GET and POST methods
+- Tested with  **curl**, and prepared files (curl -v http://localhost:8080/, 
+- Verified **GET**, **POST**, **DELETE** requests (curl -X POST -F "file=@test.txt" http://localhost:8080/upload/, curl -X DELETE http://localhost:8080/upload/test.txt)
+- Checked handling of **unknown HTTP methods** (curl -X PATCH http://localhost:8080/)
+- Confirmed correct **HTTP status codes** are returned (curl -I http://localhost:8080/)
+- Tested **file upload** and retrieval (http://localhost:8080/valami.txt)
 - Verified **CGI error handling** (e.g., infinite loops, script errors)
 - Tested using **web browser** (static site, wrong URLs, directory listing, redirects)
 - Tested configuration with **multiple ports** and **hostnames**
 - Checked running **multiple servers** with overlapping ports
-- Ran **stress tests** using Siege (`siege -b`, `siege -b -c 10 http://localhost:8080/`, `siege -c 50 -t 10s http://localhost:8080/`)
-- Confirmed **no memory leaks** under load
-- Verified **no hanging or stuck connections**
+- Ran **stress tests** using Siege (siege -b, siege -b -c 10 http://localhost:8080/, siege -c 50 -t 10s http://localhost:8080/)
+- Confirmed **no memory leaks** under load (valgrind --leak-check=full --show-leak-kinds=all ./webserv config/regular.conf)
+- Verified **no hanging or stuck connections** (lsof -i :8080)
+- Checked **CGI scripts** with GET and POST methods
 
 ## 📋 Additional Highlights
 
