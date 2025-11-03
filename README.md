@@ -90,7 +90,7 @@ Example configs are provided in the `config/` directory.
 - Tested using **web browser** (static site, wrong URLs, directory listing, redirects)
 - Tested configuration with **multiple ports** and **hostnames**
 - Checked running **multiple servers** with overlapping ports
-- Ran **stress tests** using Siege (`siege -b`)
+- Ran **stress tests** using Siege (`siege -b`, `siege -b -c 10 http://localhost:8080/`, `siege -c 50 -t 10s http://localhost:8080/`)
 - Confirmed **no memory leaks** under load
 - Verified **no hanging or stuck connections**
 
